@@ -1,0 +1,81 @@
+
+---
+
+## Important fix
+
+Inside Markdown, those triple backticks can sometimes mess up when pasted inside another block here, so if it looks weird in VS Code, use this exact version instead:
+
+```md
+# Sotiro Portfolio Website
+
+A personal portfolio website built using HTML, CSS, and JavaScript.
+
+## Overview
+
+This project is a black-and-white themed personal portfolio website designed to showcase who I am, the projects I have worked on, my career ambitions, and ways to contact me.
+
+The website features a clean one-page scrolling layout with a bold landing section, fade-in content sections, project showcases, and contact links.
+
+## Features
+
+- Bold centered landing page
+- Black and white minimalist design
+- Smooth scrolling navigation
+- About Me section
+- Projects section
+- Career Goals section
+- Contact section
+- Resume / external links support
+- Fade-in scroll effects
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+
+## Project Structure
+
+    portfolio-website/
+    ├── index.html
+    ├── style.css
+    └── script.js
+
+## Sections Included
+
+### Home
+The landing section introduces the portfolio with the title **SOTIRO** and the subtitle **Explore Sotiro**.
+
+### About Me
+A section that introduces who I am, my background, and my interests in software engineering.
+
+### Projects
+A showcase of projects I have worked on, including short descriptions and live demo links.
+
+### Career Goals
+A section outlining my ambitions, professional direction, and goals after university.
+
+### Contact
+A section with ways to connect with me, including email, LinkedIn, resume, and other external links.
+
+## How to Run the Website
+
+1. Download or clone the repository
+2. Open the project folder in Visual Studio Code
+3. Open `index.html` in a browser
+
+Optional:
+- Use the **Live Server** extension in VS Code for easier development
+
+## Future Improvements
+
+- Add real project demos
+- Upload resume
+- Improve animations
+- Add mobile refinements
+- Add custom font styling
+- Add GitHub and LinkedIn links
+
+## Author
+
+Aaron Sotiro
