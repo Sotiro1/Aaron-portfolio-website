@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pitch Finder SA | Aaron Sotiropoulos</title>
+    <meta
+      name="description"
+      content="Pitch Finder SA: a map-based Laravel and Vue app for finding soccer pitches in South Australia."
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="starfield"></div>
+
+    <nav class="navbar">
+      <div class="container nav-inner">
+        <a href="index.html" class="logo">SOTIRO</a>
+
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#projects" class="active-link">Projects</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="assets/Aaron_Sotiropoulos_Resume.pdf" class="nav-resume" target="_blank" rel="noopener">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container">
+      <header class="case-hero reveal">
+        <a href="index.html#projects" class="back-link">← All projects</a>
+        <p class="eyebrow">Side project · 2026</p>
+        <h1>Pitch Finder SA</h1>
+        <p class="lead">
+          A map-based app for finding soccer pitches in South Australia. It shows
+          surface, lighting, access, facilities and whether a pitch is likely to
+          be free, so you can find somewhere to play without driving around.
+        </p>
+
+        <dl class="case-meta">
+          <div><dt>Role</dt><dd>Solo, design to deploy</dd></div>
+          <div><dt>Year</dt><dd>2026</dd></div>
+          <div><dt>Back end</dt><dd>Laravel 13</dd></div>
+          <div><dt>Front end</dt><dd>Vue 3, Inertia, TypeScript</dd></div>
+        </dl>
+      </header>
+
+      <section class="case-section reveal">
+        <h2>Preview</h2>
+        <div class="case-body">
+          <figure class="screenshot">
+            <div class="screenshot-bar"><span></span><span></span><span></span></div>
+            <img src="assets/pitch-finder.jpg" alt="Pitch Finder SA: a map of Adelaide with clustered pitch markers, and a sidebar of ranked pitches with scores, surface, floodlight and access tags" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-section reveal">
+        <h2>The problem</h2>
+        <div class="case-body">
+          <p>
+            When you want somewhere to play, you need to know a few things: what
+            the surface is, whether there are lights, whether you can get in, and
+            whether anyone is likely to be using it. Pitch Finder puts all of
+            that on one map, for every pitch in the state.
+          </p>
+        </div>
+      </section>
+
+      <section class="case-section reveal">
+        <h2>What it does</h2>
+        <div class="case-body">
+          <div class="feature-grid">
+            <div class="feature">
+              <h3>Map of every pitch</h3>
+              <p>
+                Browse all 306 pitches on a Leaflet map, coloured by club, school
+                or park ground, and search by name, suburb, council or school.
+              </p>
+            </div>
+            <div class="feature">
+              <h3>Likely to be free</h3>
+              <p>
+                Each pitch shows whether it's likely to be free, so you don't
+                turn up to a full ground.
+              </p>
+            </div>
+            <div class="feature">
+              <h3>Ranked results</h3>
+              <p>
+                Pick what matters most to you (condition, access, lighting or
+                facilities) and each pitch gets a weighted score out of 100.
+              </p>
+            </div>
+            <div class="feature">
+              <h3>Clubs and home grounds</h3>
+              <p>
+                Local clubs are linked to the grounds they play at.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section reveal">
+        <h2>How it's built</h2>
+        <div class="case-body">
+          <div class="feature-grid">
+            <div class="feature">
+              <h3>OpenStreetMap import</h3>
+              <p>
+                Every SA pitch is imported from OpenStreetMap through the
+                Overpass API, so the data covers the whole state from day one.
+              </p>
+              <ul class="chips"><li>Overpass API</li><li>Laravel</li></ul>
+            </div>
+            <div class="feature">
+              <h3>Photo pipeline</h3>
+              <p>
+                User photos are resized to WebP, stripped of GPS data and held for
+                admin approval before they go public.
+              </p>
+              <ul class="chips"><li>WebP</li><li>Moderation</li></ul>
+            </div>
+            <div class="feature">
+              <h3>Quality gate</h3>
+              <p>
+                One command runs Pint, PHPStan, vue-tsc and the test suite before
+                every push, the same checks I rely on at work.
+              </p>
+              <ul class="chips"><li>Pint</li><li>PHPStan</li><li>vue-tsc</li></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section reveal">
+        <h2>Stack</h2>
+        <div class="case-body">
+          <ul class="chips">
+            <li>Laravel 13</li>
+            <li>Vue 3</li>
+            <li>Inertia</li>
+            <li>TypeScript</li>
+            <li>Tailwind CSS</li>
+            <li>Leaflet</li>
+            <li>OpenStreetMap</li>
+          </ul>
+        </div>
+      </section>
+
+      <a href="nisteia.html" class="next-project">
+        <span>Next project</span>
+        <strong>Νηστεία (Nisteia) →</strong>
+      </a>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>&copy; <span data-year>2026</span> Aaron Sotiropoulos</span>
+        <div class="footer-links">
+          <a href="https://github.com/Sotiro1" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/aaronsotiropoulos" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:aaronsot616@gmail.com">Email</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

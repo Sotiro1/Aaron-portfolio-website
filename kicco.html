@@ -3,139 +3,117 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kicco Web App | Sotiro</title>
+    <title>Kicco Finance Dashboard | Aaron Sotiropoulos</title>
+    <meta
+      name="description"
+      content="A finance dashboard prototype built for Kicco Espresso, a family business."
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="starfield"></div>
 
     <nav class="navbar">
-      <a href="index.html#top" class="logo">SOTIRO</a>
+      <div class="container nav-inner">
+        <a href="index.html" class="logo">SOTIRO</a>
 
-      <button class="hamburger" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-      <ul class="nav-links">
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#projects">Work</a></li>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#projects" class="active-link">Projects</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="assets/Aaron_Sotiropoulos_Resume.pdf" class="nav-resume" target="_blank" rel="noopener">Resume</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
-    <main class="profile-page">
-      <div class="section-inner">
-        <div class="page-intro narrow fade-section">
-          <a href="index.html#projects" class="back-btn">← Back to Work</a>
-          <p class="profile-kicker">Kicco</p>
-          <h1>Kicco Finance Web App</h1>
-          <p>
-            An end-to-end finance dashboard prototype designed for a family
-            business, focused on improving visibility across revenue, costs,
-            labour, GST, and key business trends through a practical and
-            structured interface.
-          </p>
-          <p class="project-status">Status: End-to-end prototype</p>
+    <main class="container">
+      <header class="case-hero reveal">
+        <a href="index.html#projects" class="back-link">← All projects</a>
+        <p class="eyebrow">Prototype</p>
+        <h1>Kicco finance dashboard</h1>
+        <p class="lead">
+          A finance dashboard prototype for Kicco Espresso, my family's business.
+          It brings revenue, costs, labour, suppliers, budgets and GST for every
+          store into one place, with an AI panel you can ask questions about the
+          numbers.
+        </p>
+
+        <dl class="case-meta">
+          <div><dt>Client</dt><dd>Kicco Espresso</dd></div>
+          <div><dt>Type</dt><dd>Web app prototype</dd></div>
+          <div><dt>Status</dt><dd>End-to-end prototype</dd></div>
+        </dl>
+      </header>
+
+      <section class="case-section reveal">
+        <h2>Preview</h2>
+        <div class="case-body">
+          <figure class="screenshot">
+            <div class="screenshot-bar"><span></span><span></span><span></span></div>
+            <img src="assets/kicco-dashboard.jpg" alt="Kicco Finance overview: revenue, costs, labour and net revenue totals, a monthly trends chart, recent activity and an AI insights panel" />
+          </figure>
         </div>
+      </section>
 
-        <section class="showcase-section fade-section">
-          <div class="showcase-copy">
-            <p class="profile-kicker">Dashboard Preview</p>
-            <h2>
-              A practical finance dashboard built for real business visibility.
-            </h2>
-            <p>
-              Designed to present financial and operational data in a clearer,
-              more accessible way, helping create a stronger overview of
-              business performance at a glance.
-            </p>
-          </div>
-
-          <div class="showcase-frame">
-            <div class="mock-browser-bar">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <img
-              src="images/kicco-dashboard.jpg"
-              alt="Kicco finance dashboard preview"
-              class="showcase-image"
-            />
-          </div>
-        </section>
-
-        <section class="feature-section fade-section">
-          <h2>Key Features</h2>
-
-          <div class="projects-grid">
-            <div class="project-card">
-              <h3>Financial Visibility</h3>
+      <section class="case-section reveal">
+        <h2>What it covers</h2>
+        <div class="case-body">
+          <div class="feature-grid">
+            <div class="feature">
+              <h3>Overview across stores</h3>
               <p>
-                Brings together key financial figures into one dashboard view
-                for clearer review and easier understanding.
+                Totals for revenue, costs, labour and net revenue, filterable by
+                store and by 7 days, 30 days, month or all time.
               </p>
             </div>
-
-            <div class="project-card">
-              <h3>Business Tracking</h3>
+            <div class="feature">
+              <h3>Trends and recent activity</h3>
               <p>
-                Designed to explore how operational and financial data can be
-                structured more effectively within a real business environment.
+                A monthly trends chart compares revenue, costs and labour, next to
+                a feed of the latest transactions.
               </p>
             </div>
-
-            <div class="project-card">
-              <h3>Practical Interface</h3>
+            <div class="feature">
+              <h3>Budgets and forecasting</h3>
               <p>
-                Focused on creating a clean, usable interface that feels
-                relevant to day-to-day business use.
+                Separate sections for suppliers, budgets, benchmarks, budget vs
+                actual, forecasts and GST.
+              </p>
+            </div>
+            <div class="feature">
+              <h3>AI insights</h3>
+              <p>
+                An insights panel built on the OpenAI API that answers questions
+                about the business's finances.
               </p>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="feature-section fade-section">
-          <h2>Tech Stack</h2>
-
-          <div class="projects-grid">
-            <div class="project-card">
-              <h3>Frontend</h3>
-              <p>
-                Built to present business information through a clean,
-                structured, and user-friendly interface.
-              </p>
-            </div>
-
-            <div class="project-card">
-              <h3>System Design</h3>
-              <p>
-                Structured as an end-to-end prototype focused on practical
-                functionality, business clarity, and future refinement.
-              </p>
-            </div>
-
-            <div class="project-card">
-              <h3>Data Focus</h3>
-              <p>
-                Designed around making financial and operational data easier to
-                understand, review, and manage.
-              </p>
-            </div>
-          </div>
-        </section>
-      </div>
+      <a href="pitch-finder.html" class="next-project">
+        <span>Next project</span>
+        <strong>Pitch Finder SA →</strong>
+      </a>
     </main>
 
     <footer class="site-footer">
-      <div class="section-inner footer-inner">
-        <span>&copy; 2025 Aaron Sotiropoulos</span>
+      <div class="container footer-inner">
+        <span>&copy; <span data-year>2026</span> Aaron Sotiropoulos</span>
         <div class="footer-links">
-          <a href="https://github.com/Sotiro1" target="_blank">GitHub</a>
-          <a href="https://www.linkedin.com/in/aaron-sotiro-1695a0379" target="_blank">LinkedIn</a>
+          <a href="https://github.com/Sotiro1" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/aaronsotiropoulos" target="_blank" rel="noopener">LinkedIn</a>
           <a href="mailto:aaronsot616@gmail.com">Email</a>
         </div>
       </div>

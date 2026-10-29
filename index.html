@@ -3,201 +3,468 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sotiro Portfolio</title>
+    <title>Aaron Sotiropoulos | Software Engineer</title>
+    <meta
+      name="description"
+      content="Aaron Sotiropoulos, Computer Science student at Flinders University and Software Engineering Intern at JACK App, writing production Laravel and Vue code."
+    />
+    <meta property="og:title" content="Aaron Sotiropoulos | Software Engineer" />
+    <meta
+      property="og:description"
+      content="Computer Science student at Flinders University. Laravel, Vue 3, TypeScript. Adelaide, SA."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="starfield"></div>
 
     <nav class="navbar">
-      <a href="index.html#top" class="logo">SOTIRO</a>
+      <div class="container nav-inner">
+        <a href="#top" class="logo">SOTIRO</a>
 
-      <button class="hamburger" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-      <ul class="nav-links">
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#projects">Work</a></li>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="assets/Aaron_Sotiropoulos_Resume.pdf" class="nav-resume" target="_blank" rel="noopener">Resume</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
-    <section id="top" class="hero fade-section">
-      <div class="hero-content">
-        <h1>SOTIRO</h1>
-        <p class="hero-role">Software Engineer</p>
-        <p class="hero-sub">
-          Flinders University &middot; Building clean, functional systems.
-        </p>
-        <a href="#about" class="scroll-circle">↓</a>
-      </div>
-    </section>
-
-    <section id="about" class="content-section fade-section">
-      <div class="section-inner about-layout">
-        <div class="about-left">
-          <h2>About</h2>
+    <main>
+      <section id="top" class="hero">
+        <div class="hero-content reveal">
+          <h1>SOTIRO</h1>
+          <p class="hero-role">Software Engineering Intern &middot; JACK App</p>
+          <p class="hero-sub">
+            Aaron Sotiropoulos &middot; Computer Science, Flinders University
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn">View Work</a>
+            <a href="assets/Aaron_Sotiropoulos_Resume.pdf" class="btn" target="_blank" rel="noopener">Resume</a>
+          </div>
+          <a href="#about" class="scroll-circle" aria-label="Scroll to about">↓</a>
         </div>
+      </section>
 
-        <div class="about-right">
-          <div class="about-timeline">
-            <div class="timeline-item">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content">
-                <span class="timeline-number">01</span>
-                <h3>Where I Started</h3>
-                <p>
-                  I’m Aaron Sotiropoulos, a Software Engineering student at
-                  Flinders University. I’ve always been interested in building
-                  things and understanding how they work. In high school, I got
-                  into building PCs, which sparked my interest in both hardware
-                  and software. Although I went into software engineering not
-                  knowing exactly what to expect, over time it’s become
-                  something I genuinely enjoy. Now in my third year, I’ve found
-                  a real passion for it and I’m excited to see where it takes
-                  me.
-                </p>
-              </div>
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">01 / About</p>
+            <h2>A bit about me</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-copy reveal">
+              <p>
+                I'm a Computer Science student at
+                <strong>Flinders University</strong>, graduating in June 2027. I
+                started in Software Engineering and moved across to Computer
+                Science. My High Distinctions are in software testing,
+                requirements and design, and systems software.
+              </p>
+              <p>
+                Right now I'm on placement at <strong>JACK App</strong>, a
+                construction management platform used by builders across
+                Australia and North America. I work across the Laravel API, the
+                Vue 3 front end and the subscription portal. Most days that means
+                picking up errors from Sentry, tracing them to the cause and
+                shipping a tested fix.
+              </p>
+              <p>
+                Outside of placement I build my own projects: a pitch finder for
+                soccer players in SA, and a fasting companion for the Greek
+                Orthodox community. I've also spent five years
+                at Coles and help out with my family's business, Kicco Espresso.
+              </p>
             </div>
 
-            <div class="timeline-item">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content">
-                <span class="timeline-number">02</span>
-                <h3>Outside of Work</h3>
-                <p>
-                  Outside of software, I enjoy working on personal ideas,
-                  creative projects, and looking after myself. I spend my nights
-                  working at Coles, one day a week making gelato for my family
-                  business, and a lot of my spare time in the gym. If I’m not
-                  doing any of that, you’ll probably find me talking to ChatGPT
-                  about how I can one day build my own defence tech firm.
-                </p>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-marker"></div>
-              <div class="timeline-content">
-                <span class="timeline-number">03</span>
-                <h3>Where I’m Going</h3>
-                <p>
-                  As I continue through university, I want to grow into a
-                  software engineer who can contribute to strong, real-world
-                  projects and continue developing both technically and
-                  creatively. I’m especially interested in going into a defence
-                  career working on military equipment and machines I am also
-                  intrested in building systems and digital experiences that are
-                  clean, functional, and genuinely useful.
-                </p>
-              </div>
-            </div>
+            <ul class="facts reveal">
+              <li><span>Based in</span><span>Adelaide, SA</span></li>
+              <li><span>Studying</span><span>B. Computer Science, Flinders</span></li>
+              <li><span>Graduating</span><span>June 2027</span></li>
+              <li><span>Currently</span><span>Intern at JACK App</span></li>
+              <li><span>Main stack</span><span>Laravel, Vue 3, TypeScript</span></li>
+              <li><span>Languages</span><span>English, Greek</span></li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="projects" class="content-section fade-section">
-      <div class="section-inner">
-        <h2>Work & Projects</h2>
-
-        <div class="projects-grid">
-          <div class="project-card featured">
-            <div class="project-tags">
-              <span class="project-tag">AI</span>
-              <span class="project-tag">Automation</span>
-            </div>
-            <h3>LDC Strategies: AI Automation</h3>
-            <p>
-              A collection of practical AI-driven automation work developed
-              through LDC Strategies, focused on workflow design, process
-              improvement, and building useful systems with real-world business
-              value.
-            </p>
-            <a href="ldc.html" class="demo-btn">View Work</a>
+      <section id="experience" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">02 / Experience</p>
+            <h2>Where I've worked</h2>
           </div>
 
-          <div class="project-card">
-            <div class="project-tags">
-              <span class="project-tag">Web App</span>
-              <span class="project-tag">Finance</span>
-            </div>
-            <h3>Kicco Finance Web App</h3>
-            <p>
-              An end-to-end prototype web application created for a family
-              business to explore financial tracking, business insights, and
-              operational visibility through a clean and practical interface.
-            </p>
-            <a href="kicco.html" class="demo-btn">View Project</a>
+          <ol class="timeline">
+            <li class="job current reveal">
+              <div class="job-head">
+                <h3>Software Engineering Intern <span>· JACK App</span></h3>
+                <span class="job-date">Aug 2026 – Present</span>
+              </div>
+              <p class="job-sub">Adelaide · 20-week industry placement</p>
+              <ul class="chips">
+                <li>Laravel</li>
+                <li>Vue 3</li>
+                <li>TypeScript</li>
+                <li>MySQL</li>
+                <li>PHPUnit</li>
+                <li>GitLab CI</li>
+                <li>Sentry</li>
+              </ul>
+              <ul class="points">
+                <li>
+                  Work across the Laravel API, Vue 3 front end and subscription
+                  portal of a construction management platform used by builders
+                  in Australia and North America.
+                </li>
+                <li>
+                  Pick up production errors from Sentry and trace them to the
+                  cause, including crashes in the Gantt schedule, costing and
+                  bills screens, and a bad permission record in the database that
+                  stopped users from logging in.
+                </li>
+                <li>
+                  Fixed data bugs builders would notice: an invoice report
+                  showing invoices outside the chosen dates, cost option plans
+                  drifting out of sync with their estimate, and deleted jobs
+                  leaving schedules and invoice items behind.
+                </li>
+                <li>
+                  Built features end to end, including SKU search in the
+                  catalogue, client notifications on variation and selection
+                  comments, and US and Canadian wording for terms like
+                  “Contractor” and “Trade”.
+                </li>
+                <li>
+                  Write PHPUnit tests with every change and keep PHPStan, Pint,
+                  ESLint and vue-tsc passing in CI. Rework code after senior
+                  review (for example, swapping row-by-row inserts for one
+                  INSERT…SELECT query) and review teammates' merge requests.
+                </li>
+              </ul>
+              <p class="job-stat">
+                <strong>140+</strong> commits shipped through staging, beta and
+                production
+              </p>
+            </li>
+
+            <li class="job reveal">
+              <div class="job-head">
+                <h3>AI Automation Intern <span>· LDC Strategies</span></h3>
+                <span class="job-date">Jan 2026 – May 2026</span>
+              </div>
+              <p class="job-sub">Henley Beach · One day a week</p>
+              <ul class="chips">
+                <li>n8n</li>
+                <li>OpenAI API</li>
+                <li>Serper</li>
+                <li>FireCrawl</li>
+                <li>Google Sheets</li>
+                <li>GoHighLevel</li>
+                <li>Slack</li>
+              </ul>
+              <ul class="points">
+                <li>
+                  Built n8n workflows for lead research and capture that search
+                  for a company, scrape its website, summarise it with OpenAI,
+                  then send the result to Google Sheets, GoHighLevel and Slack.
+                </li>
+                <li>
+                  Built a company research pipeline the team used in place of
+                  manual prospecting.
+                </li>
+                <li>
+                  Compared self-hosted n8n setups to see whether the agency could
+                  run its own instance.
+                </li>
+              </ul>
+              <a href="ldc.html" class="text-link">See the workflows →</a>
+            </li>
+
+            <li class="job reveal">
+              <div class="job-head">
+                <h3>Casual roles <span>· Coles Supermarkets, Kicco Espresso</span></h3>
+                <span class="job-date">2021 – Present</span>
+              </div>
+              <ul class="points">
+                <li>Five years at Coles across several departments.</li>
+                <li>Packing and deliveries for Kicco Espresso, my family's business.</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">03 / Projects</p>
+            <h2>Things I've built</h2>
+            <p>Side projects and university work. Each one started with a real problem.</p>
           </div>
 
-          <div class="project-card">
-            <div class="project-tags">
-              <span class="project-tag">Mobile</span>
-              <span class="project-tag">Web App</span>
-            </div>
-            <h3>Nisteia (Νηστεία)</h3>
-            <p>
-              A mobile web app that helps Orthodox Christians navigate fasting
-              during Holy Week. Scan supermarket products, browse traditional
-              Greek recipes, and get personalised AI meal suggestions in English
-              and Greek.
-            </p>
-            <div class="card-actions">
-              <a href="nisteia.html" class="demo-btn">View Project</a>
-              <a
-                href="https://nisteia.vercel.app"
-                class="demo-btn"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Live App</a
-              >
-            </div>
-          </div>
+          <div class="projects">
+            <article class="card featured reveal">
+              <div>
+                <div class="card-top">
+                  <span class="card-kind">Featured · Web app</span>
+                  <span class="card-year">2026</span>
+                </div>
+                <h3>Pitch Finder SA</h3>
+                <p>
+                  A map-based app for finding soccer pitches in South Australia.
+                  It shows surface, lighting, access and facilities, and whether a
+                  pitch is likely to be free.
+                </p>
+                <ul class="chips">
+                  <li>Laravel 13</li>
+                  <li>Vue 3</li>
+                  <li>Inertia</li>
+                  <li>TypeScript</li>
+                  <li>Tailwind CSS</li>
+                  <li>Leaflet</li>
+                </ul>
+                <div class="card-links">
+                  <a href="pitch-finder.html" class="text-link">Read the case study →</a>
+                </div>
+              </div>
+              <ul class="card-highlights">
+                <li>
+                  <strong>Every pitch in SA</strong>
+                  Imported from OpenStreetMap through the Overpass API, with
+                  local clubs linked to their home grounds.
+                </li>
+                <li>
+                  <strong>Weighted ranking</strong>
+                  Search results are ranked with a weighted score.
+                </li>
+                <li>
+                  <strong>Safe photo uploads</strong>
+                  Resized to WebP, GPS data stripped, held for admin approval.
+                </li>
+              </ul>
+            </article>
 
-          <div class="project-card">
-            <div class="project-tags">
-              <span class="project-tag">Web</span>
-              <span class="project-tag">Design</span>
-            </div>
-            <h3>Portfolio Website</h3>
-            <p>
-              A personal portfolio website designed and built to showcase my
-              background, work, projects, and contact details through a minimal
-              black-and-white digital experience.
-            </p>
-            <a href="#top" class="demo-btn">Live</a>
+            <article class="card reveal">
+              <div class="card-top">
+                <span class="card-kind">PWA</span>
+                <span class="card-year">2025 – 2026</span>
+              </div>
+              <h3>Νηστεία (Nisteia)</h3>
+              <p>
+                A Greek Orthodox fasting companion. Scan a barcode, look it up in
+                Open Food Facts, and find out if it fits the fasting rules. Claude
+                suggests meal ideas in Greek or English.
+              </p>
+              <ul class="chips">
+                <li>Next.js</li>
+                <li>Quagga2</li>
+                <li>Open Food Facts</li>
+                <li>Claude API</li>
+              </ul>
+              <div class="card-links">
+                <a href="nisteia.html" class="text-link">Case study →</a>
+                <a href="https://nisteia.vercel.app" class="text-link" target="_blank" rel="noopener">Live app ↗</a>
+              </div>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-top">
+                <span class="card-kind">Automation</span>
+                <span class="card-year">2026</span>
+              </div>
+              <h3>LDC lead research workflows</h3>
+              <p>
+                Six n8n workflows built at LDC Strategies, including a pipeline
+                that researches a company and writes a pre-call brief before
+                anyone on the team has seen the lead.
+              </p>
+              <ul class="chips">
+                <li>n8n</li>
+                <li>OpenAI</li>
+                <li>FireCrawl</li>
+                <li>GoHighLevel</li>
+              </ul>
+              <div class="card-links">
+                <a href="ldc.html" class="text-link">See the workflows →</a>
+              </div>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-top">
+                <span class="card-kind">University · Flinders</span>
+                <span class="card-year">2025</span>
+              </div>
+              <h3>Cloud and team projects</h3>
+              <p>
+                A serverless data pipeline on AWS Lambda, DynamoDB and
+                EventBridge. Also a Node-RED module for a team healthcare triage
+                system using live OpenWeather data.
+              </p>
+              <ul class="chips">
+                <li>AWS Lambda</li>
+                <li>DynamoDB</li>
+                <li>EventBridge</li>
+                <li>Node-RED</li>
+              </ul>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-top">
+                <span class="card-kind">Prototype</span>
+              </div>
+              <h3>Kicco finance dashboard</h3>
+              <p>
+                A finance dashboard prototype for my family's business, bringing
+                revenue, costs, labour and GST into one view.
+              </p>
+              <div class="card-links">
+                <a href="kicco.html" class="text-link">View prototype →</a>
+              </div>
+            </article>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="contact" class="content-section">
-      <div class="section-inner narrow contact-section fade-section">
-        <h2>Let’s Connect</h2>
-        <p class="contact-intro">
-          If you’d like to connect, collaborate, or learn more about my work,
-          feel free to reach out.
-        </p>
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">04 / Skills</p>
+            <h2>What I work with</h2>
+          </div>
 
-        <a href="contact.html" class="contact-page-btn">Contact Me</a>
-      </div>
-    </section>
+          <div class="skills">
+            <div class="skill-group reveal">
+              <h3>Languages</h3>
+              <ul class="chips">
+                <li>PHP</li>
+                <li>TypeScript</li>
+                <li>JavaScript</li>
+                <li>SQL</li>
+                <li>Java</li>
+                <li>C++</li>
+                <li>HTML/CSS</li>
+              </ul>
+            </div>
+            <div class="skill-group reveal">
+              <h3>Frameworks</h3>
+              <ul class="chips">
+                <li>Laravel</li>
+                <li>Vue 3</li>
+                <li>Inertia</li>
+                <li>Next.js</li>
+                <li>Node.js</li>
+                <li>Tailwind CSS</li>
+              </ul>
+            </div>
+            <div class="skill-group reveal">
+              <h3>Data</h3>
+              <ul class="chips">
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
+                <li>DynamoDB</li>
+                <li>Prisma</li>
+              </ul>
+            </div>
+            <div class="skill-group reveal">
+              <h3>Tooling</h3>
+              <ul class="chips">
+                <li>Linux (Ubuntu)</li>
+                <li>Git</li>
+                <li>GitLab CI</li>
+                <li>Docker</li>
+                <li>PHPUnit</li>
+                <li>PHPStan</li>
+                <li>Sentry</li>
+                <li>Claude Code</li>
+              </ul>
+            </div>
+            <div class="skill-group reveal">
+              <h3>Cloud and AI</h3>
+              <ul class="chips">
+                <li>AWS Lambda</li>
+                <li>DynamoDB</li>
+                <li>EventBridge</li>
+                <li>Vercel</li>
+                <li>n8n</li>
+                <li>OpenAI API</li>
+                <li>Claude API</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">05 / Education</p>
+            <h2>Study</h2>
+          </div>
+
+          <div class="edu reveal">
+            <div class="edu-head">
+              <h3>Bachelor of Computer Science</h3>
+              <span class="job-date">Feb 2024 – Jun 2027 (expected)</span>
+            </div>
+            <p class="edu-sub">Flinders University · transferred from Software Engineering</p>
+
+            <ul class="subjects">
+              <li>Software Testing and Quality Assurance <span class="grade hd">HD</span></li>
+              <li>Software System Requirements and Design <span class="grade hd">HD</span></li>
+              <li>Systems Software <span class="grade hd">HD</span></li>
+              <li>Data Structures and Algorithms <span class="grade">DN</span></li>
+              <li>Cloud and Distributed Computing <span class="grade">DN</span></li>
+              <li>Data Engineering <span class="grade">DN</span></li>
+              <li>Computer Programming 1 <span class="grade">DN</span></li>
+              <li>Database Modelling and Information Management</li>
+              <li>Human Factors for Interactive Web-Based Systems</li>
+              <li>Networks and Cybersecurity</li>
+            </ul>
+            <p class="grade-key">HD = High Distinction · DN = Distinction</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container cta reveal">
+          <p class="eyebrow">06 / Contact</p>
+          <h2>Let's talk</h2>
+          <p>
+            I finish my degree in June 2027. If you're hiring, working on
+            something interesting, or just want to chat, my inbox is open.
+          </p>
+          <a href="mailto:aaronsot616@gmail.com" class="cta-email">aaronsot616@gmail.com</a>
+          <div class="hero-actions">
+            <a href="contact.html" class="btn">Contact Me</a>
+            <a href="https://www.linkedin.com/in/aaronsotiropoulos" class="btn" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/Sotiro1" class="btn" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer class="site-footer">
-      <div class="section-inner footer-inner">
-        <span>&copy; 2025 Aaron Sotiro</span>
+      <div class="container footer-inner">
+        <span>&copy; <span data-year>2026</span> Aaron Sotiropoulos</span>
         <div class="footer-links">
-          <a href="https://github.com/Sotiro1" target="_blank">GitHub</a>
-          <a
-            href="https://www.linkedin.com/in/aaron-sotiro-1695a0379"
-            target="_blank"
-            >LinkedIn</a
-          >
+          <a href="https://github.com/Sotiro1" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/aaronsotiropoulos" target="_blank" rel="noopener">LinkedIn</a>
           <a href="mailto:aaronsot616@gmail.com">Email</a>
         </div>
       </div>

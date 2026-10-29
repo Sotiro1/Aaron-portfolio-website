@@ -1,36 +1,32 @@
-# Aaron-portfolio-website
-# Sotiro Portfolio Website
+# Aaron Sotiropoulos: Portfolio
 
-A personal portfolio website built using HTML, CSS, and JavaScript.
+My personal portfolio site. It's plain HTML, CSS and JavaScript with no build step, deployed to GitHub Pages.
 
-## Overview
+## Pages
 
-This project is a black-and-white themed personal portfolio website designed to showcase who I am, the projects I have worked on, my career ambitions, and ways to contact me.
+| File | What it is |
+| --- | --- |
+| `index.html` | Home: about, experience, projects, skills, education, contact |
+| `pitch-finder.html` | Pitch Finder SA case study |
+| `nisteia.html` | Νηστεία (Nisteia) case study |
+| `ldc.html` | LDC Strategies automation workflows |
+| `kicco.html` | Kicco finance dashboard prototype |
+| `contact.html` | Contact form (Formspree) |
+| `thankyou.html` | Shown after the contact form is sent |
+| `profile.html` | Redirects to `index.html#experience` (old URL) |
 
-The website features a clean one-page scrolling layout with a bold landing section, fade-in content sections, project showcases, and contact links.
+Images and the resume PDF are in `assets/`.
 
-## Features
+## Running locally
 
-- Bold centered landing page
-- Black and white minimalist design
-- Smooth scrolling navigation
-- About Me section
-- Projects section
-- Career Goals section
-- Contact section
-- Resume / external links support
-- Fade-in scroll effects
-
-## Technologies Used
-
-- HTML
-- CSS
-- JavaScript
-
-## Project Structure
+Open `index.html` in a browser, or serve the folder:
 
 ```bash
-portfolio-website/
-├── index.html
-├── style.css
-└── script.js
+python -m http.server 8000
+```
+
+## Deploying
+
+Pushing to `main` deploys the site through `.github/workflows/static.yml`.
+
+To update the resume, replace `assets/Aaron_Sotiropoulos_Resume.pdf` and keep the same filename.

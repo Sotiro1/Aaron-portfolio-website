@@ -1,53 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thank You | Sotiro</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanks | Aaron Sotiropoulos</title>
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="starfield"></div>
 
-  <div id="starfield"></div>
+    <nav class="navbar">
+      <div class="container nav-inner">
+        <a href="index.html" class="logo">SOTIRO</a>
 
-  <nav class="navbar">
-    <a href="index.html#top" class="logo">SOTIRO</a>
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-    <button class="hamburger" aria-label="Toggle menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
-    <ul class="nav-links">
-      <li><a href="index.html#about">About</a></li>
-      <li><a href="index.html#projects">Work</a></li>
-      <li><a href="profile.html">Profile</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <main class="profile-page fade-section">
-    <div class="section-inner narrow" style="text-align:center;">
-      <p class="profile-kicker">Thank You</p>
-      <h1>Thank you, I have received your enquiry.</h1>
-      <p>
-        I appreciate you reaching out. I’ll review your message and get back to you as soon as possible.
-      </p>
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="section-inner footer-inner">
-      <span>&copy; 2025 Aaron Sotiropoulos</span>
-      <div class="footer-links">
-        <a href="https://github.com/Sotiro1" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/aaron-sotiro-1695a0379" target="_blank">LinkedIn</a>
-        <a href="mailto:aaronsot616@gmail.com">Email</a>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="assets/Aaron_Sotiropoulos_Resume.pdf" class="nav-resume" target="_blank" rel="noopener">Resume</a>
+          </li>
+        </ul>
       </div>
-    </div>
-  </footer>
+    </nav>
 
-  <script src="script.js"></script>
-</body>
+    <main class="container thanks">
+      <div class="reveal">
+        <p class="eyebrow">Message sent</p>
+        <h1>Thanks for reaching out</h1>
+        <p>I've got your message and I'll get back to you as soon as I can.</p>
+        <a href="index.html" class="btn">← Back to home</a>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>&copy; <span data-year>2026</span> Aaron Sotiropoulos</span>
+        <div class="footer-links">
+          <a href="https://github.com/Sotiro1" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/aaronsotiropoulos" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:aaronsot616@gmail.com">Email</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

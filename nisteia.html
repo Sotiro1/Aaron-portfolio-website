@@ -1,171 +1,187 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nisteia (Νηστεία) | Sotiro</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Νηστεία (Nisteia) | Aaron Sotiropoulos</title>
+    <meta
+      name="description"
+      content="Nisteia: a Greek Orthodox fasting companion PWA built with Next.js, Quagga2, Open Food Facts and the Claude API."
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="starfield"></div>
 
-  <div id="starfield"></div>
+    <nav class="navbar">
+      <div class="container nav-inner">
+        <a href="index.html" class="logo">SOTIRO</a>
 
-  <nav class="navbar">
-    <a href="index.html#top" class="logo">SOTIRO</a>
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-    <button class="hamburger" aria-label="Toggle menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
-    <ul class="nav-links">
-      <li><a href="index.html#about">About</a></li>
-      <li><a href="index.html#projects">Work</a></li>
-      <li><a href="profile.html">Profile</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <main class="profile-page">
-    <div class="section-inner">
-
-      <div class="page-intro narrow fade-section">
-        <a href="index.html#projects" class="back-btn">← Back to Work</a>
-        <p class="profile-kicker">Nisteia</p>
-        <h1>Nisteia (Νηστεία)</h1>
-        <p>
-          A mobile web app that helps Orthodox Christians navigate fasting during Holy Week.
-          Scan supermarket products, browse traditional Greek recipes, and get personalised
-          meal suggestions, all without needing to already know the rules.
-        </p>
-        <p class="project-status">Status: Live &middot; Deployed on Vercel &middot; Holy Week 2025</p>
-        <div class="card-actions" style="margin-top: 24px;">
-          <a href="https://nisteia.vercel.app" class="demo-btn" target="_blank" rel="noopener noreferrer">Live App</a>
-        </div>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#projects" class="active-link">Projects</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="assets/Aaron_Sotiropoulos_Resume.pdf" class="nav-resume" target="_blank" rel="noopener">Resume</a>
+          </li>
+        </ul>
       </div>
+    </nav>
 
-      <section class="showcase-section fade-section">
-        <div class="showcase-copy">
-          <p class="profile-kicker">The App</p>
-          <h2>Five tabs. One purpose each.</h2>
+    <main class="container">
+      <header class="case-hero reveal">
+        <a href="index.html#projects" class="back-link">← All projects</a>
+        <p class="eyebrow">Side project · 2025 – 2026</p>
+        <h1>Νηστεία (Nisteia)</h1>
+        <p class="lead">
+          A Greek Orthodox fasting companion. Scan a barcode in the supermarket,
+          look the product up in Open Food Facts, and find out straight away
+          whether it fits the fasting rules. Claude suggests meal ideas, in Greek
+          or English.
+        </p>
+        <div class="hero-actions">
+          <a href="https://nisteia.vercel.app" class="btn btn-primary" target="_blank" rel="noopener">Open the live app ↗</a>
+        </div>
+
+        <dl class="case-meta">
+          <div><dt>Role</dt><dd>Solo, design to deploy</dd></div>
+          <div><dt>Type</dt><dd>Progressive web app</dd></div>
+          <div><dt>Stack</dt><dd>Next.js, TypeScript, Tailwind</dd></div>
+          <div><dt>Status</dt><dd>Live on Vercel</dd></div>
+        </dl>
+      </header>
+
+      <section class="case-section reveal">
+        <h2>The problem</h2>
+        <div class="case-body">
           <p>
-            Built and shipped end-to-end during Holy Week 2025. Open it and immediately know
-            what you can eat today. Clear rules, real recipes, and a barcode scanner for when
-            you're standing in the supermarket aisle unsure about a product.
+            Orthodox fasting rules change day by day through Holy Week: meat,
+            dairy, fish, oil and wine are each allowed or not depending on the
+            day. If you didn't grow up with it, it's hard to keep track, and
+            standing in a supermarket aisle reading ingredient labels doesn't
+            help.
+          </p>
+          <p>
+            I built Nisteia so anyone can open it and immediately know
+            <strong>what they can eat today</strong>, and so older members of
+            the community can use the whole thing in Greek.
           </p>
         </div>
       </section>
 
-      <section class="feature-section fade-section">
-        <h2>Key Features</h2>
-
-        <div class="projects-grid">
-          <div class="project-card">
-            <h3>Daily Fasting Rules</h3>
-            <p>
-              Covers Palm Sunday through to Holy Saturday. Tap any day and get the exact
-              fasting rules: a grid showing meat, dairy, fish, oil and wine status, alongside
-              the story of what the Church is commemorating that day. Auto-detects today's date
-              so it always opens to the right day.
-            </p>
-          </div>
-
-          <div class="project-card">
-            <h3>Barcode Scanner</h3>
-            <p>
-              Point the camera at any supermarket product and get an instant fasting verdict.
-              Powered by Quagga2 for fast retail barcode detection. If a product isn't in the
-              Open Food Facts database, an AI fallback via Claude checks it on the spot by name.
-              Torch button included for dark supermarket aisles.
-            </p>
-          </div>
-
-          <div class="project-card">
-            <h3>AI Meal Suggestions</h3>
-            <p>
-              Pick ingredients you enjoy from a grid and Claude returns three personalised fasting
-              meal ideas built around your preferences and today's fasting restrictions. Results
-              also switch to Greek when Greek mode is active.
-            </p>
-          </div>
-
-          <div class="project-card">
-            <h3>Greek Recipe Library</h3>
-            <p>
-              Six traditional Greek fasting recipes: Fasolada, Fakes, Taramasalata, Lagana,
-              Spanakorizo, and Halva, with numbered steps and the Greek name for each.
-              Automatically filters to only show what's permitted on the selected day.
-            </p>
-          </div>
-
-          <div class="project-card">
-            <h3>Beginner's Guide</h3>
-            <p>
-              A plain-language FAQ for anyone who has never fasted before. What is Orthodox fasting?
-              What can I eat? Do I have to be perfect? Why is Good Friday the hardest day?
-              All answered without assuming any prior knowledge of the tradition.
-            </p>
-          </div>
-
-          <div class="project-card">
-            <h3>Greek / English Toggle</h3>
-            <p>
-              One tap switches the entire app between English and Greek. Every screen, label,
-              recipe name, fasting verdict, and FAQ question and answer. Built specifically so
-              older community members can use it fully in Greek without any friction.
-            </p>
+      <section class="case-section reveal">
+        <h2>Features</h2>
+        <div class="case-body">
+          <div class="feature-grid">
+            <div class="feature">
+              <h3>Daily fasting rules</h3>
+              <p>
+                Palm Sunday to Holy Saturday. Each day shows a grid of meat,
+                dairy, fish, oil and wine status, plus what the Church
+                commemorates that day. It opens on today's date automatically.
+              </p>
+            </div>
+            <div class="feature">
+              <h3>Barcode scanner</h3>
+              <p>
+                Point the camera at a product for an instant verdict. If the
+                product isn't in Open Food Facts, Claude checks it by name
+                instead. There's a torch button for dark aisles.
+              </p>
+            </div>
+            <div class="feature">
+              <h3>AI meal suggestions</h3>
+              <p>
+                Pick ingredients you like and Claude returns three meal ideas
+                that fit today's restrictions, in whichever language is active.
+              </p>
+            </div>
+            <div class="feature">
+              <h3>Greek recipe library</h3>
+              <p>
+                Six traditional fasting recipes (Fasolada, Fakes, Taramasalata,
+                Lagana, Spanakorizo and Halva), filtered to what's allowed on the
+                selected day.
+              </p>
+            </div>
+            <div class="feature">
+              <h3>Beginner's guide</h3>
+              <p>
+                A plain-language FAQ for people who have never fasted before,
+                written without assuming any knowledge of the tradition.
+              </p>
+            </div>
+            <div class="feature">
+              <h3>Greek / English toggle</h3>
+              <p>
+                One tap switches every screen, label, recipe, verdict and FAQ
+                answer between English and Greek.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="feature-section fade-section">
-        <h2>Tech Stack</h2>
-
-        <div class="projects-grid">
-          <div class="project-card">
-            <h3>Frontend</h3>
-            <p>
-              Next.js with App Router and TypeScript throughout. Styled with Tailwind CSS.
-              Deployed as a PWA that installs directly to iPhone and Android home screens
-              straight from the browser, no App Store required.
-            </p>
-          </div>
-
-          <div class="project-card">
-            <h3>AI Integration</h3>
-            <p>
-              Anthropic Claude API powers two features: personalised fasting meal suggestions
-              based on the user's ingredient preferences, and a product ingredient check
-              fallback when a barcode isn't found in the Open Food Facts database.
-            </p>
-          </div>
-
-          <div class="project-card">
-            <h3>Scanning & Deployment</h3>
-            <p>
-              Quagga2 for fast retail barcode detection. Open Food Facts API for product
-              lookups. Custom React Context for full English and Greek localisation.
-              Auto-deployed to Vercel on every git push to main.
-            </p>
+      <section class="case-section reveal">
+        <h2>How it's built</h2>
+        <div class="case-body">
+          <div class="feature-grid">
+            <div class="feature">
+              <h3>Front end</h3>
+              <p>
+                Next.js App Router and TypeScript, styled with Tailwind. Installs
+                to iPhone and Android home screens as a PWA, with no app store
+                needed.
+              </p>
+              <ul class="chips"><li>Next.js</li><li>TypeScript</li><li>Tailwind</li></ul>
+            </div>
+            <div class="feature">
+              <h3>Scanning and data</h3>
+              <p>
+                Quagga2 handles retail barcode detection, and the Open Food Facts
+                API provides the product lookups.
+              </p>
+              <ul class="chips"><li>Quagga2</li><li>Open Food Facts</li></ul>
+            </div>
+            <div class="feature">
+              <h3>AI and localisation</h3>
+              <p>
+                The Claude API powers meal suggestions and the fallback product
+                check. A custom React Context handles all the Greek and English
+                strings.
+              </p>
+              <ul class="chips"><li>Claude API</li><li>React Context</li></ul>
+            </div>
           </div>
         </div>
       </section>
 
-    </div>
-  </main>
+      <a href="ldc.html" class="next-project">
+        <span>Next project</span>
+        <strong>LDC lead research workflows →</strong>
+      </a>
+    </main>
 
-  <footer class="site-footer">
-    <div class="section-inner footer-inner">
-      <span>&copy; 2025 Aaron Sotiropoulos</span>
-      <div class="footer-links">
-        <a href="https://github.com/Sotiro1" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/aaron-sotiro-1695a0379" target="_blank">LinkedIn</a>
-        <a href="mailto:aaronsot616@gmail.com">Email</a>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>&copy; <span data-year>2026</span> Aaron Sotiropoulos</span>
+        <div class="footer-links">
+          <a href="https://github.com/Sotiro1" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/aaronsotiropoulos" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:aaronsot616@gmail.com">Email</a>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -3,208 +3,163 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LDC Strategies | Sotiro</title>
+    <title>LDC Strategies | Aaron Sotiropoulos</title>
+    <meta
+      name="description"
+      content="n8n automation workflows built during an AI Automation internship at LDC Strategies."
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="starfield"></div>
 
     <nav class="navbar">
-      <a href="index.html#top" class="logo">SOTIRO</a>
+      <div class="container nav-inner">
+        <a href="index.html" class="logo">SOTIRO</a>
 
-      <button class="hamburger" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-      <ul class="nav-links">
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#projects">Work</a></li>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#projects" class="active-link">Projects</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="assets/Aaron_Sotiropoulos_Resume.pdf" class="nav-resume" target="_blank" rel="noopener">Resume</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
-    <main class="profile-page">
-      <div class="section-inner">
-        <div class="page-intro narrow fade-section">
-          <a href="index.html#projects" class="back-btn">← Back to Work</a>
-          <p class="profile-kicker">LDC Strategies</p>
-          <h1>AI Automation Work</h1>
+    <main class="container">
+      <header class="case-hero reveal">
+        <a href="index.html#projects" class="back-link">← All projects</a>
+        <p class="eyebrow">Internship · Jan – May 2026</p>
+        <h1>AI automation at LDC Strategies</h1>
+        <p class="lead">
+          One day a week at an AI and web agency in Henley Beach, building n8n
+          workflows that connect OpenAI, scrapers, Google Sheets, GoHighLevel and
+          Slack, so leads are researched before a person ever looks at them.
+        </p>
+
+        <dl class="case-meta">
+          <div><dt>Role</dt><dd>AI Automation Intern</dd></div>
+          <div><dt>Commitment</dt><dd>One day a week</dd></div>
+          <div><dt>Platform</dt><dd>n8n</dd></div>
+          <div><dt>Workflows</dt><dd>6 built</dd></div>
+        </dl>
+      </header>
+
+      <section class="case-section reveal">
+        <h2>Highlight</h2>
+        <div class="case-body">
           <p>
-            A series of practical automation workflows built during an
-            internship at LDC Strategies, an AI and web agency. Each workflow
-            solves a real business problem, connecting tools like OpenAI, Google
-            Sheets, Twilio, and GoHighLevel through n8n.
+            The main piece was a <strong>company research pipeline</strong> the
+            team used in place of manual prospecting. When a lead comes in, the
+            workflow finds their website with Serper, scrapes it with FireCrawl,
+            and has GPT-4o-mini write a structured pre-call brief: industry,
+            services, revenue signals, market position and pain points. The brief
+            is pushed to GoHighLevel, posted to Slack and saved to Google Sheets
+            before anyone has opened the lead.
           </p>
-          <p class="project-status">
-            Status: Built & Deployed &middot; 2025 &middot; 2026
+          <p>
+            I also compared self-hosted n8n setups to see whether the agency
+            could run its own instance.
           </p>
         </div>
+      </section>
 
-        <section class="feature-section fade-section">
-          <h2>Workflows Built</h2>
-
-          <div class="projects-grid">
-            <div class="project-card">
-              <h3>AI Lead Intake & Spam Filter</h3>
+      <section class="case-section reveal">
+        <h2>Workflows</h2>
+        <div class="case-body">
+          <div class="feature-grid">
+            <div class="feature">
+              <h3>Automated company research</h3>
               <p>
-                A form submission triggers the workflow. Empty messages are
-                filtered first. GPT-4o then reads the submission and decides if
-                it is spam or a genuine inquiry. Spam is flagged, notified, and
-                saved to a separate sheet. Legitimate leads get an automated
-                reply confirming receipt and are saved to the leads sheet.
+                Serper finds the site, FireCrawl scrapes it, GPT-4o-mini writes
+                the sales brief, and the result goes to the CRM, Slack and
+                Sheets.
               </p>
-              <div class="workflow-tools">
-                <span class="workflow-tool">n8n</span>
-                <span class="workflow-tool">OpenAI</span>
-                <span class="workflow-tool">Gmail</span>
-                <span class="workflow-tool">Google Sheets</span>
-              </div>
+              <ul class="chips">
+                <li>Serper</li><li>FireCrawl</li><li>OpenAI</li><li>GoHighLevel</li><li>Slack</li>
+              </ul>
             </div>
-
-            <div class="project-card">
-              <h3>Advanced Lead Pipeline with Scoring</h3>
+            <div class="feature">
+              <h3>Lead form + company research</h3>
               <p>
-                A full webhook-based lead system. Every submission is logged
-                raw, then classified by type, Website, SEO, Ecommerce, CRM,
-                Automation, AI, using JavaScript regex and AI. Leads are then
-                scored 0 to 100 based on email quality, message detail, company
-                name, and intent signals. AI spam filtering runs before any
-                notifications fire.
+                A form-triggered version. GPT resolves the company domain,
+                FireCrawl scrapes it, and the brief lands in Google Sheets. It
+                still works if no domain can be found.
               </p>
-              <div class="workflow-tools">
-                <span class="workflow-tool">n8n</span>
-                <span class="workflow-tool">OpenAI</span>
-                <span class="workflow-tool">Gmail</span>
-                <span class="workflow-tool">Google Sheets</span>
-                <span class="workflow-tool">GoHighLevel</span>
-              </div>
+              <ul class="chips">
+                <li>OpenAI</li><li>FireCrawl</li><li>Google Sheets</li>
+              </ul>
             </div>
-
-            <div class="project-card">
-              <h3>Automated Company Research</h3>
+            <div class="feature">
+              <h3>Lead pipeline with scoring</h3>
               <p>
-                When a lead submits their details, the workflow searches for
-                their company website using Serper, scrapes it with FireCrawl,
-                and sends the content to GPT-4o-mini which generates a
-                structured pre-call sales brief covering industry, services,
-                revenue signals, market position, and pain points. The brief is
-                pushed to GoHighLevel CRM, posted to a Slack channel, and saved
-                to Google Sheets before a human has seen the lead.
+                Webhook intake that logs every raw submission, classifies leads
+                by type using regex and AI, scores them 0–100 on intent signals,
+                and filters spam before any notification fires.
               </p>
-              <div class="workflow-tools">
-                <span class="workflow-tool">n8n</span>
-                <span class="workflow-tool">OpenAI</span>
-                <span class="workflow-tool">Serper</span>
-                <span class="workflow-tool">FireCrawl</span>
-                <span class="workflow-tool">GoHighLevel</span>
-                <span class="workflow-tool">Slack</span>
-                <span class="workflow-tool">Google Sheets</span>
-              </div>
+              <ul class="chips">
+                <li>Webhooks</li><li>JavaScript</li><li>OpenAI</li><li>GoHighLevel</li>
+              </ul>
             </div>
-
-            <div class="project-card">
-              <h3>Lead Form + Company Research</h3>
+            <div class="feature">
+              <h3>AI lead intake and spam filter</h3>
               <p>
-                A form-triggered version of the company research pipeline. A
-                lead submits their name, company, email, and revenue. GPT
-                resolves the company domain, FireCrawl scrapes the site, and
-                GPT-4o-mini generates a research brief which is saved
-                automatically to Google Sheets. Falls back gracefully if no
-                domain can be found.
+                GPT-4o decides whether a form submission is spam or a real
+                enquiry. Real leads get an automatic reply and go to the leads
+                sheet. Spam is flagged and stored separately.
               </p>
-              <div class="workflow-tools">
-                <span class="workflow-tool">n8n</span>
-                <span class="workflow-tool">OpenAI</span>
-                <span class="workflow-tool">FireCrawl</span>
-                <span class="workflow-tool">Google Sheets</span>
-              </div>
+              <ul class="chips">
+                <li>OpenAI</li><li>Gmail</li><li>Google Sheets</li>
+              </ul>
             </div>
-
-            <div class="project-card">
-              <h3>Application Follow-Up Engine</h3>
+            <div class="feature">
+              <h3>Application follow-up engine</h3>
               <p>
-                Monitors a Google Sheet for new internship and job applications
-                logged via a form. Waits exactly 7 days, then reads the sheet
-                again to check if a response has been recorded. If the response
-                column is still empty, it fires an automated Gmail reminder to
-                follow up with the company.
+                Watches a sheet of job applications, waits seven days, and sends a
+                Gmail reminder if no response has been recorded.
               </p>
-              <div class="workflow-tools">
-                <span class="workflow-tool">n8n</span>
-                <span class="workflow-tool">Google Sheets</span>
-                <span class="workflow-tool">Gmail</span>
-              </div>
+              <ul class="chips">
+                <li>Google Sheets</li><li>Gmail</li>
+              </ul>
             </div>
-
-            <div class="project-card">
-              <h3>Daily SMS Appointment Reminders</h3>
+            <div class="feature">
+              <h3>Daily SMS appointment reminders</h3>
               <p>
-                Runs every morning at 9am via a scheduled trigger. Pulls all
-                booked appointments from a Google Sheet, filters for any
-                scheduled for the following day that have not yet been reminded,
-                and sends a personalised SMS via Twilio. Updates the sheet to
-                mark each reminder as sent, then emails a daily summary showing
-                how many reminders fired or confirming none were needed.
+                At 9am every day, it finds tomorrow's appointments that haven't
+                had a reminder, texts each person via Twilio, marks them as sent
+                and emails a summary.
               </p>
-              <div class="workflow-tools">
-                <span class="workflow-tool">n8n</span>
-                <span class="workflow-tool">Google Sheets</span>
-                <span class="workflow-tool">Twilio</span>
-                <span class="workflow-tool">Gmail</span>
-              </div>
+              <ul class="chips">
+                <li>Twilio</li><li>Google Sheets</li><li>Gmail</li>
+              </ul>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="feature-section fade-section">
-          <h2>Tools & Integrations</h2>
-
-          <div class="projects-grid">
-            <div class="project-card">
-              <h3>Automation</h3>
-              <p>
-                All workflows were built in n8n, a visual workflow automation
-                platform. Logic was handled through a mix of built-in nodes,
-                custom JavaScript code nodes, and conditional branching.
-              </p>
-            </div>
-
-            <div class="project-card">
-              <h3>AI & Intelligence</h3>
-              <p>
-                OpenAI GPT-4o and GPT-4o-mini powered spam filtering, lead type
-                classification, lead scoring, company domain resolution, website
-                brief generation, and pre-call sales research.
-              </p>
-            </div>
-
-            <div class="project-card">
-              <h3>APIs & Data</h3>
-              <p>
-                FireCrawl for website scraping, Serper for Google Search
-                lookups, Twilio for SMS, Google Sheets for data storage,
-                GoHighLevel for CRM updates, Slack for team notifications, and
-                Gmail for automated emails.
-              </p>
-            </div>
-          </div>
-        </section>
-      </div>
+      <a href="kicco.html" class="next-project">
+        <span>Next project</span>
+        <strong>Kicco finance dashboard →</strong>
+      </a>
     </main>
 
     <footer class="site-footer">
-      <div class="section-inner footer-inner">
-        <span>&copy; 2025 Aaron Sotiro</span>
+      <div class="container footer-inner">
+        <span>&copy; <span data-year>2026</span> Aaron Sotiropoulos</span>
         <div class="footer-links">
-          <a href="https://github.com/Sotiro1" target="_blank">GitHub</a>
-          <a
-            href="https://www.linkedin.com/in/aaron-sotiro-1695a0379"
-            target="_blank"
-            >LinkedIn</a
-          >
+          <a href="https://github.com/Sotiro1" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/aaronsotiropoulos" target="_blank" rel="noopener">LinkedIn</a>
           <a href="mailto:aaronsot616@gmail.com">Email</a>
         </div>
       </div>
